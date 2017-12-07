@@ -1,4 +1,4 @@
-promiseEach(iterable: Array, callback: Promise<any>) => Promise<Array<any>>
+promiseEach(iterable: Array\<any\>, callback: (any, ...) => Promise\<any\>) => Promise\<Array\<any\>\>
 
 ## Parameters
 ### iterable
