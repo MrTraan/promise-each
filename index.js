@@ -1,4 +1,4 @@
-module.exports = (iterable, promisifier) =>
+module.exports = (iterable, promisifier, initialValue = []) =>
   iterable.reduce(
     (chain, elem, index) =>
       chain.then(chainRes =>
@@ -6,5 +6,5 @@ module.exports = (iterable, promisifier) =>
           res => (chainRes.push(res), chainRes)
         )
       ),
-    Promise.resolve([])
+    Promise.resolve(initialValue)
   );
