@@ -1,17 +1,17 @@
 promiseEach(iterable: Array, callback: Promise<any>) => Promise<Array<any>>
 
-# Parameters
-## iterable
+## Parameters
+### iterable
   The array to transform
-## callback
+### callback
   Function to execute on each element in the array, taking four arguments:
-  ### currentValue
+  #### currentValue
     The current element being processed in the array.
-  ### currentIndex
+  #### currentIndex
     The index of the current element being processed in the array.
-  ### array
+  #### array
     The array given in first argument.
-  ### currentResults
+  #### currentResults
     An array containing the results of the previous calls so far.
 
 Usage:
